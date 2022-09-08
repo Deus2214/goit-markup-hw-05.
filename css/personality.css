@@ -72,7 +72,7 @@ ul {
   font-family: "Raleway";
 }
 
-.item {
+.item-portholio {
   /* Студія */
   text-decoration: none;
   font-weight: 500;
@@ -83,7 +83,7 @@ ul {
   color: #212121;
 }
 
-.item-1 {
+.item-portholio-1 {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -92,6 +92,22 @@ ul {
 
   color: #212121;
 }
+
+.item-portholio-1::after{
+ content: '';
+ display: flex;
+ align-items: center;
+  text-align: center;
+  width: 78px;
+  height: 4px;
+  left: 546px;
+  top: 76px; 
+  background: #2196F3;
+  border-radius: 2px;
+
+}
+
+
 
 .item-2 {
   /* Контакти */
@@ -283,6 +299,8 @@ width: 100%;
   justify-content: center;
   padding: 20px;
   background-color: rgba(33, 150, 243, 0.9);
+  outline: 2px solid grey;
+  outline-offset: -2px;
 transition:transform var(--anim-fast)
 
 }
