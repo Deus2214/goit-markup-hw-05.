@@ -93,21 +93,18 @@ ul {
   color: #212121;
 }
 
-.item-portholio-1::after{
- content: '';
- display: flex;
- align-items: center;
+.item-portholio-1::after {
+  content: "";
+  display: flex;
+  align-items: center;
   text-align: center;
   width: 78px;
   height: 4px;
   left: 546px;
-  top: 76px; 
-  background: #2196F3;
+  top: 76px;
+  background: #2196f3;
   border-radius: 2px;
-
 }
-
-
 
 .item-2 {
   /* Контакти */
@@ -280,19 +277,18 @@ ul {
 
   color: #212121;
 }
-.team-thumb{
+.team-thumb {
   position: relative;
- overflow: hidden;
-  
+  overflow: hidden;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
-transform: translateY(100%);
-transform: 2500ms;
-width: 100%;
+  transform: translateY(100%);
+  transform: 2500ms;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -301,42 +297,41 @@ width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   outline: 2px solid grey;
   outline-offset: -2px;
-transition: transform 1500ms;
-
+  transition: transform 1500ms;
 }
-.overlay-desc{
-width: 322px;
-height: 168px;
-left: 239px;
-top: 323px;
+.overlay-desc {
+  width: 322px;
+  height: 168px;
+  left: 239px;
+  top: 323px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-/* or 156% */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-  color:  #FFFFFF;;
+  color: #ffffff;
 }
-.team-text:hover .overlay{
+.team-text:hover .overlay {
   display: block;
   transform: translateY(0);
- 
 }
-a{
+a {
   text-decoration: none;
 }
 .portfolio-mooving-link {
-  text-decoration: none  ;
+  display: block;
+  text-decoration: none;
+
   transition: transform var(--cubic-mooving-speed-color);
- 
 }
-.team-text{
-text-decoration: none;
-} 
+.team-text {
+  text-decoration: none;
+}
 .img-1 {
   /* img */
 
@@ -676,7 +671,7 @@ text-decoration: none;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
-  border-right: 24px;
-  border-left: 24px;
-  border-bottom: 50px;
+  border-right: 1px solid var(--accent-bg-color);
+  border-left: 1px solid var(--accent-bg-color);
+  border-bottom: 1px solid var(--accent-bg-color);
 }
