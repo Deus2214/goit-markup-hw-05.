@@ -324,10 +324,19 @@ letter-spacing: 0.03em;
 .team-text:hover .overlay{
   display: block;
   transform: translateY(0);
+ 
+}
+a{
+  text-decoration: none;
 }
 .portfolio-mooving-link {
-  text-decoration: none;
-  transition: transform var(--cubic-mooving-speed-color);}
+  text-decoration: none  ;
+  transition: transform var(--cubic-mooving-speed-color);
+ 
+}
+.team-text{
+text-decoration: none;
+} 
 .img-1 {
   /* img */
 
