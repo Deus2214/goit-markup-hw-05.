@@ -795,6 +795,8 @@ user agent stylesheet ul {
 
 .backdrop {
   position: absolute;
+ display: flex;
+ justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
