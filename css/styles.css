@@ -6,7 +6,14 @@ html {
 *::after {
   box-sizing: border-box;
 }
-
+:root {
+  --primary-text-color: #fffbfb;
+    --section-title-colot: #080505;
+    --accent-color: #2196F3;
+    --accent-white-color: #FFFFFF;
+    --items: 1;
+    --indent: 30px;
+    --hover-timing: 250mscubic-bezier(0.4, 0, 0.2, 1);}
 .head {
   text-decoration: none;
 }
@@ -22,7 +29,7 @@ html {
   padding-top: 25px;
   padding-bottom: 25px;
   background: #ffffff;
-  border-bottom: 1px solid;
+ 
 }
 .container {
   width: 1200px;
@@ -30,11 +37,12 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px;
+
 }
 .header-container {
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
 ul {
@@ -95,15 +103,15 @@ li a:focus {
 }
 .item::after {
   content: "";
-  display: flex;
-  width: 48px;
+ width: 48px;
   height: 4px;
-  left: 451px;
-  top: 76px;
-  align-items: center;
-  text-align: center;
+margin-top: 28px;
   background: #2196f3;
   border-radius: 2px;
+  display: flex;
+position: absolute;
+  cursor: pointer;
+
 }
 .item-1 {
   text-decoration: none;
@@ -397,7 +405,7 @@ li a:focus {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  background-color: #ffffff;
+ 
   color: #212121;
 }
 .command-list {
@@ -555,7 +563,6 @@ li a:focus {
   fill: #f5f4fa;
 }
 .clients-team {
-  background-color: #f5f4fa;
   padding: 94px 0;
 }
 
@@ -567,14 +574,15 @@ li a:focus {
   height: 44px;
   background-color: var(--primary-text-color);
   border-radius: 50%;
-  fill: #757575;
+  fill: #AFB1B8;;
 }
 .social-link-2 {
-  fill: #757575;
+  fill: #AFB1B8;;
   width: 100%;
   height: 100%;
   display: flex;
-  align-self: center;
+align-items: center;
+justify-content: center;
 
   border: 1px solid #afb1b8;
 }
@@ -618,10 +626,7 @@ li a:focus {
   height: 92px;
 }
 .always-clients {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  
 }
 ul {
   list-style: none;
@@ -761,8 +766,8 @@ user agent stylesheet ul {
 
 .backdrop {
   position: absolute;
-  top: 20%;
-  left: 40%;
+  top: 0;
+  left:  0;
   width: 100%;
   height: 100%;
 }
@@ -774,8 +779,9 @@ user agent stylesheet ul {
 .modal {
   width: 528px;
   height: 581px;
-  left: 536px;
-  top: 221px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

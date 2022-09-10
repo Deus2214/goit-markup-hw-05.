@@ -95,16 +95,14 @@ ul {
 
 .item-portholio-1::after {
   content: "";
-  display: flex;
-  align-items: center;
-  text-align: center;
   width: 78px;
-  height: 4px;
-  left: 546px;
-  top: 76px;
-  background: #2196f3;
-  border-radius: 2px;
-}
+   height: 4px;
+ margin-top: 28px;
+   background: #2196f3;
+   border-radius: 2px;
+   display: flex;
+ position: absolute;
+   cursor: pointer;}
 
 .item-2 {
   /* Контакти */
@@ -287,7 +285,7 @@ ul {
   top: 0;
   left: 0;
   transform: translateY(100%);
-  transform: 2500ms;
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -298,6 +296,7 @@ ul {
   outline: 2px solid grey;
   outline-offset: -2px;
   transition: transform 1500ms;
+ 
 }
 .overlay-desc {
   width: 322px;
@@ -322,16 +321,19 @@ ul {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
-.portfolio-mooving-link {
-  display: block;
-  text-decoration: none;
-
-  transition: transform var(--cubic-mooving-speed-color);
-}
+.portfolio-moving-link {
+display: block;
+  transition-property: border,box-shadow;
+  transition-duration: 280ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 .team-text {
   text-decoration: none;
+  
 }
+
+
 .img-1 {
   /* img */
 
@@ -597,11 +599,13 @@ a {
   color: #757575;
 }
 .footer {
+  max-width: 1600px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: 724px;
-  margin-right: 724px;
+ width: auto;
+  margin-left: auto
+  margin-right: auto
 }
 
 .logo12 {
@@ -671,7 +675,8 @@ a {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
-  border-right: 1px solid var(--accent-bg-color);
-  border-left: 1px solid var(--accent-bg-color);
-  border-bottom: 1px solid var(--accent-bg-color);
+  border-right: 1px solid  rgb(240, 234, 234)247, 241, 241;
+  border-left: 1px solid  rgb(240, 234, 234)247, 241, 241;
+  border-bottom: 1px solid  rgb(240, 234, 234)247, 241, 241;
 }
+
