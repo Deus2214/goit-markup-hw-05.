@@ -81,6 +81,10 @@ ul {
   letter-spacing: 0.02em;
 
   color: #212121;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .item-portholio-1 {
@@ -91,6 +95,10 @@ ul {
   letter-spacing: 0.02em;
 
   color: #212121;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .item-portholio-1::after {
@@ -113,6 +121,10 @@ ul {
   letter-spacing: 0.02em;
 
   color: #212121;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;;
 }
 .mail-icon {
   margin-right: 10px;
@@ -128,6 +140,10 @@ ul {
   color: #212121;
   display: flex;
   align-items: center;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 .tell-icon {
   margin-right: 10px;
@@ -144,6 +160,10 @@ ul {
   display: flex;
   align-items: center;
   color: #757575;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 .main-title {
   left: 1078px;
@@ -193,6 +213,10 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
+  transition-property: background-color,color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 .button-2 {
   padding: 6px 22px;
@@ -206,6 +230,10 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
+  transition-property: background-color,color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 .button-2:hover:focus {
   background: #2196f3;
@@ -214,6 +242,10 @@ ul {
 .filters .button .button-2:focus {
   color: var(--white-text-color);
   background-color: var(--accent-bg-color);
+  transition-property: background-color,color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .filters-8 {
@@ -325,14 +357,16 @@ a {
 }
 .portfolio-moving-link {
 display: block;
-  transition-property: border,box-shadow;
-  transition-duration: 280ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
 .team-text {
   text-decoration: none;
   
 }
 
+.portfolio-moving-link:hover{
+  box-shadow: inset;
+  
+}
 
 .img-1 {
   /* img */
